@@ -1,0 +1,178 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    width: 720px;
+    height: 500px;
+    background-color: hsl(0, 0%, 100%);
+    /* padding: 20px; */
+    margin: 150px;
+    box-shadow: 0 0 25px 0 rgba(82, 82, 82, 0.165);
+    border-radius: 25px;
+    position: relative;
+}
+.sum {
+    left: 50%;
+    position: absolute;
+    padding: 25px;
+}
+.sum h2 {
+    margin-left: -5px;
+    margin-bottom: 10px;
+}
+.sum div {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 15px;
+    width: 300px;
+    border-radius: 7px;
+    background: #eee;
+}
+.sum div span {
+    color: black;
+    font-weight: bold;
+}
+.sum div .five {
+    opacity: .5;
+    padding-left: 20px;
+    margin-left: 100px;
+}
+.sum div .five1 {
+    margin-left: 112px;
+}
+.sum div .six {
+    position: relative;
+    left: 110px;
+}
+.sum div .six1 {
+    position: relative;
+    left: 123px;
+}
+.sum .one {
+    color: hsl(0, 100%, 67%);
+    background-color: hsl(1 100% 97% / 1);
+}
+.sum .two {
+    color: hsl(39, 100%, 56%);
+    background-color: hsl(39deg 100% 96.71%);
+}
+.sum .three {
+    color: hsl(166, 100%, 37%);
+    background-color: hsl(166deg 84.47% 95.88%);
+}
+.sum .four {
+    color: hsl(234, 85%, 45%);
+    background-color: hsl(234deg 100% 96.71%);
+}
+.sum img {
+    position: relative;
+    bottom: -4px;
+    left: -4px;
+}
+.sum button {
+    background-color: hsl(224, 30%, 27%);
+    width: 290px;
+    height: 50px;
+    margin-left: 5px;
+    border-radius: 40px;
+    color: white;
+    cursor: pointer;
+    font-size: 17px;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+}
+.sum button:hover {
+    background-image: linear-gradient(hsl(252deg 54.15% 52.23%), hsl(241, 81%, 54%));
+}
+.result {
+    width: 345px;
+    height: 500px;
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 25px;
+    padding: 20px;
+    position: relative;
+}
+.result p {
+    position: absolute;
+    bottom: 45px;
+    margin: 20px;
+    padding-left: 20px;
+    opacity: 0.7;
+    width: 240px;
+    color: white;
+}
+.result h1 {
+    position: absolute;
+    left: 30%;
+    color: white;
+    margin: 20px;
+    bottom: 130px;
+}
+.result div {
+    clip-path: circle();
+    width: 190px;
+    height: 190px;
+    text-align: center;
+    line-height: 190px;
+    position: absolute;
+    top: 19%;
+    background-image: linear-gradient(hsl(252deg 54.15% 52.23%), hsl(241, 81%, 54%));
+    left: 22%;
+    color: white;
+}
+.result .seven {
+    font-size: 70px;
+    font-weight: bold;
+}
+.result .seven1 {
+    position: absolute;
+    top: 45px;
+    opacity: .5;
+    left: 70px;
+}
+.result h3 {
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    opacity: .5;
+    top: 8%;
+    left: 30%;
+}
+.result .par1 {
+    margin-left: 14px;
+}
+.result .par2 {
+    margin-left: 70px;
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+        width: 348px;
+        height: 980px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    .sum {
+        position: absolute;
+        top: 50%;
+        right: 51%;
+        margin-right: 20%;
+        transform: translate(-350%, 0%);
+    }
+    .result {
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+    }
+}
